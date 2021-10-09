@@ -1,13 +1,13 @@
 {
   "name": "Insta Downloader Bot",
   "description": "A telegram bot To Download Insta Files ",
-  "logo": "https://telegra.ph/file/95e7dfd804ddc04d2bc99.jpg",
+  "logo": "https://telegra.ph/file/6a3b1febade2313dd0dca.jpg",
   "keywords": [
     "Insta","InstagramDownloader"
   ],
   "repository": "https://github.com/SJ-Lynx/InstaSJ",
   "success_url": "https://t.me/SJ_Lynx",
-  "website": "https://github.com/SJ-Lynx/InstaDL",
+  "website": "https://github.com/SJ-Lynx/InstaSJ",
   "env": {
   },
       "buildpacks": [
