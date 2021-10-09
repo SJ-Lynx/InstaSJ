@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-# DONT_REMOVE_THIS
-#  TheDarkW3b (c)
-
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from telegram import ParseMode
 import logging
@@ -15,14 +11,14 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 #Logger Setup
 logger = logging.getLogger(__name__)
 
-TOKEN = "YOUR_TOKEN_HERE"
+TOKEN = "2094281139:AAEKt8uQMhorq_X70C1ztRAUYbDx9pBZY18"
 
 def download(bot, update):
     message = update.effective_message
     instagram_post = message.text
     if instagram_post=="/start":
         bot.send_chat_action(chat_id=update.message.chat_id, action="typing")
-        update.message.reply_text("❤️ Thanks For Using Me Just Send Me The Link In Below Format  \n🔥 Format :- https://www.instagram.com/p/B4zvXCIlNTw/ \nVideos Must Be Less Then 20MB, For Now It Cannot Support Long IGTV Videos \n\n<b>Support Group :-</b> @Technology_Arena \n<b>🌀 Source</b> \nhttps://github.com/TheDarkW3b/instagram", parse_mode=ParseMode.HTML, disable_web_page_preview=True)
+        update.message.reply_text("Здравствуйте, пришлите мне ссылку на пост в instagram для скачивания \nВидео должно быть меньше 20 МБ, так как сейчас оно не может поддерживать длинные видео IGTV \n\n<b>Канал :-</b> @SJa_bots \n<b>🌀 Автор</b> \nhttps://t.me/SJ_Lynx", parse_mode=ParseMode.HTML, disable_web_page_preview=True)
     else:
         pass
     if "instagram.com" in instagram_post:
@@ -53,9 +49,9 @@ def download(bot, update):
                 pass
         else:
             bot.send_chat_action(chat_id=update.message.chat_id, action="typing")
-            bot.sendMessage(chat_id=update.message.chat_id, text="I Cant Send You Private Posts :-( ")
+            bot.sendMessage(chat_id=update.message.chat_id, text="Я не могу отправлять вам Приватных постов :-( ")
     else:
-        bot.sendMessage(chat_id=update.message.chat_id, text="Kindly Send Me Public Instagram Video/Photo Url")
+        bot.sendMessage(chat_id=update.message.chat_id, text="Пожалуйста, пришлите мне публичный Url-Адрес Видео/Фото в Instagram")
 
 def main():
     updater = Updater(TOKEN)
