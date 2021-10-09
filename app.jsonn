@@ -1,0 +1,26 @@
+{
+  "name": "Insta Downloader Bot",
+  "description": "A telegram bot To Download Insta Files ",
+  "logo": "https://telegra.ph/file/95e7dfd804ddc04d2bc99.jpg",
+  "keywords": [
+    "Insta","InstagramDownloader"
+  ],
+  "repository": "https://github.com/SJ-Lynx/InstaSJ",
+  "success_url": "https://t.me/SJ_Lynx",
+  "website": "https://github.com/SJ-Lynx/InstaDL",
+  "env": {
+  },
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+
+
+}
